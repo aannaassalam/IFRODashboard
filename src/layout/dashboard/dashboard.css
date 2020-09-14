@@ -1,0 +1,134 @@
+.dashboard-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.dashboard-container .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-container .top h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-container .top h1 .deactive i {
+  font-size: 1rem;
+  margin: 0 1rem;
+  background-color: #e5e5e5;
+  color: #464646;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@keyframes revolve {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.dashboard-container .top h1 .active i {
+  font-size: 1rem;
+  margin: 0 1rem;
+  background-color: #e5e5e5;
+  color: #464646;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: revolve;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  cursor: pointer;
+}
+
+.dashboard-container .top .box-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dashboard-container .top .box {
+  width: 280px;
+  height: 150px;
+  background-color: #e5e5e5;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.dashboard-container .top .box i {
+  width: 80px;
+  background-color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  color: #192734;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.dashboard-container .top .box .stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-container .top .box .stat h1 {
+  color: #192734;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.dashboard-container .top .box .stat p {
+  color: #d65a31;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.chart-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.growth-chart {
+  width: 575px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.growth-chart h1 {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #192734;
+  margin-left: 20px;
+}
